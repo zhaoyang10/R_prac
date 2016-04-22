@@ -1,0 +1,9 @@
+x = seq(-3, 3, len = 20);x
+y = dnorm(x); y
+w = data.frame(x, y);w
+par(mfcol = c(2, 2))
+plot(y ~ x, w, main = "正态密度函数")
+plot(y ~ x, w, type = "l", main = "正态密度函数")
+plot(y ~ x, w, type = "o", main = "正态密度函数")
+plot(y ~ x, w, type = "b", main = "正态密度函数")
+par(mfcol = c(1, 1))
